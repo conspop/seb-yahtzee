@@ -102,6 +102,7 @@ let roll = 1
 //array of 5 dice objects
 let diceArr = []
 
+//variables for high score and past scores(used in average)
 let highScore;
 let pastScores = [];
 
@@ -138,6 +139,7 @@ rollButtonEl.addEventListener('click',rollUnfrozenDice);
 //record score when box is clicked
 boxesEl.addEventListener('click',recordScore);
 
+//roll dice when space bar is clicked
 document.addEventListener('keyup', function(e) {
   if (e.code === 'Space') {
     rollUnfrozenDice()
@@ -150,10 +152,10 @@ document.addEventListener('keyup', function(e) {
 //initialize app
 function init() {
   //create objects for all 5 dice at the beginning of the game
-  
   for (let i = 1; i<=5; i++) {
     diceArr.push(new Die());
   }
+
   //create first card
   cards.push(new Card());
 
@@ -170,7 +172,6 @@ function init() {
   if (pastScores === null) pastScores = []
   if (highScore === null) highScore = 0
   pastScores.push(0);
-
 }
 
 //rolls all of the unfrozen dice 
@@ -186,14 +187,15 @@ function rollUnfrozenDice() {
     })
     roll += 1
   } 
-
-  if(roll <= 3) {
+  //update the number of rolls left message
+  if (roll = 3) {
+    rollButtonEl.textContent = `1 ROLL LEFT`
+  } else if(roll <= 2) {
     rollButtonEl.textContent = `${4 - roll} ROLLS LEFT` 
   } else {
     rollButtonEl.textContent = `RECORD A SCORE`
     rollButtonEl.style.backgroundColor = 'orange'
   }
-  
 }
 
 //reset everything after a score is recorded
@@ -208,6 +210,7 @@ function resetTurn() {
   roll = 1
   rollButtonEl.textContent = `${4 - roll} ROLLS LEFT` 
   turn += 1
+  //if 13 turns have elapsed, move to endgame function
   if (turn > 13) endGame();
   //pushes the updated score to localStorage
   pastScores[pastScores.length - 1] = cards[round - 1].total
@@ -295,7 +298,6 @@ function diceValues() {
 
 //when player clicks on a box, record score based on the dice showing
 function recordScore(e) {
-  
   if (roll > 1 && roll <=4) {
     //store the id of the clicked box in variable clickedBox
     let clickedBox = e.target.id.toString();

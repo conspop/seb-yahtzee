@@ -20,7 +20,7 @@ https://conspop.github.io/seb-yahtzee/
 http://grail.sourceforge.net/demo/yahtzee/rules.html
 
 ### How to Play Yahtzee For One
-1. Click or tap green Roll Bar to roll dice.
+1. Click or tap green Roll Bar (or press Space if using a keyboard) to roll dice.
 2. Click or tap dice to freeze them before role.
 3. Click or tap scoring box to record score.
 4. If you roll a 2nd Yahtzee (Yahtzee Bonus), click on the box you wish to score and your Yahtzee Bonus will be added to the Yahtzee score.
