@@ -188,7 +188,7 @@ function rollUnfrozenDice() {
     roll += 1
   } 
   //update the number of rolls left message
-  if (roll = 3) {
+  if (roll == 3) {
     rollButtonEl.textContent = `1 ROLL LEFT`
   } else if(roll <= 2) {
     rollButtonEl.textContent = `${4 - roll} ROLLS LEFT` 
