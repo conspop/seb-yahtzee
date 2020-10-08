@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yahtzee</title>
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script defer src="main.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="title-row">
+      <div class="title">YAHTZEE FOR ONE</div>
+    </div>
+    <div class="boxes">
+      <div class="col1">
+        <div class="box" id="high-score">
+          <div class="box-name">high score</div>
+          <div class="box-score" id="high-score-score"></div>
+        </div>
+        <div class="box" id="ones">
+          <div class="box-name">ones</div>
+          <div class="box-score" id="ones-score"></div>
+        </div>
+        <div class="box" id="twos">
+          <div class="box-name">twos</div>
+          <div class="box-score" id="twos-score"></div>
+        </div>
+        <div class="box" id="threes">
+          <div class="box-name">threes</div>
+          <div class="box-score" id="threes-score"></div>
+        </div>
+        <div class="box" id="fours">
+          <div class="box-name">fours</div>
+          <div class="box-score" id="fours-score"></div>
+        </div>
+        <div class="box" id="fives">
+          <div class="box-name">fives</div>
+          <div class="box-score" id="fives-score"></div>
+        </div>
+        <div class="box" id="sixes">
+          <div class="box-name">sixes</div>
+          <div class="box-score" id="sixes-score"></div>
+        </div>
+        <div class="box bonus-box" id="bonus">
+          <div class="box-name">bonus</div>
+          <div class="box-score" id="bonus-score"></div>
+        </div>
+        <div class="box sub-total" id="top">
+          <div class="box-name">top</div>
+          <div class="box-score" id="top-score"></div>
+        </div>
+      </div>
+      <div class="col2">
+        <div class="box" id="avg-score">
+          <div class="box-name">avg score</div>
+          <div class="box-score" id="avg-score-score"></div>
+        </div>
+        <div class="box" id="small-straight">
+          <div class="box-name">small straight</div>
+          <div class="box-score" id="small-straight-score"></div>
+        </div>
+        <div class="box" id="large-straight">
+          <div class="box-name">large straight</div>
+          <div class="box-score" id="large-straight-score"></div>
+        </div>
+        <div class="box" id="full-house">
+          <div class="box-name">full house</div>
+          <div class="box-score" id="full-house-score"></div>
+        </div>
+        <div class="box" id="three-of-a-kind">
+          <div class="box-name">3 of a kind</div>
+          <div class="box-score" id="three-of-a-kind-score"></div>
+        </div>
+        <div class="box" id="four-of-a-kind">
+          <div class="box-name">4 of a kind</div>
+          <div class="box-score" id="four-of-a-kind-score"></div>
+        </div>
+        <div class="box" id="yahtzee">
+          <div class="box-name">yahtzee</div>
+          <div class="box-score" id="yahtzee-score"></div>
+        </div>
+        <div class="box" id="chance">
+          <div class="box-name">chance</div>
+          <div class="box-score" id="chance-score"></div>
+        </div>
+        <div class="box sub-total" id="bottom">
+          <div class="box-name">bottom</div>
+          <div class="box-score" id="bottom-score"></div>
+        </div>
+      </div>
+    </div>
+    <div class="total-row">
+      <div class="box total" id="total">
+        <div class="box-name">total</div>
+        <div class="box-score" id="total-score"></div>
+      </div>
+    </div>
+    <div class="dice-row">
+      <div id="0" class="dice"></div>
+      <div id="1" class="dice"></div>
+      <div id="2" class="dice"></div>
+      <div id="3" class="dice"></div>
+      <div id="4" class="dice"></div>
+    </div>
+    <div class="roll-row">
+      <button>3 ROLLS LEFT</button>
+    </div>
+  </div>
+</body>
+</html>
