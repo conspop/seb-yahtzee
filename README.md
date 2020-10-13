@@ -2,8 +2,8 @@
 
 ## SCREENSHOTS
 
-<img src="images/completed_game.png">
-<img src="images/ongoing_game.png">
+<img src="https://github.com/conspop/seb-yahtzee/blob/master/images/completed_game.PNG">
+<img src="https://github.com/conspop/seb-yahtzee/blob/master/images/ongoing_game.PNG">
 
 ## TECHNOLOGY USED
 
